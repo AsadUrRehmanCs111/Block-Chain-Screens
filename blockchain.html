@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BlockChain</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Style css -->
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#!">BlockChain Demo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto d-flex mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="./index.html">Hash</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./block.html">Block</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#!">Blockchain</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./distributed.html">Distributed</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tokens.html">Tokens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./coinbase.html">Coinbase</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="blockchain-section mt-4">
+        <div class="container-fluid">
+            <h1>Blockchain</h1>
+            <div class="scrolling-wrapper">
+                <div class="container1 ">
+                    <div class="row d-inline">
+                        <div class="col-xs-7">
+                            <div class="form form-bg-sucess">
+                                <form class="form-horizontal">
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Block:</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">#</span>
+                                                <input class="form-control" type="number" value="1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Nonce:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" value="72608">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Data:</label>
+                                        <div class="col-sm-10"><textarea class="form-control" rows="8"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Prev:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" disabled=""
+                                                value="09876dshbn876w2tfvw76t">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Hash:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" disabled=""
+                                                value="09876dshbn876w2tfvw76t">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <div class="col-sm-2">
+                                            <i class="icon-spinner icon-spin icon-large"></i>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <button class="btn btn-primary ladda-button" id="block1chain1mineButton"
+                                                data-style="expand-right">
+                                                <span class="ladda-label">Mine</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-inline">
+                        <div class="col-xs-7">
+                            <div class="form form-bg-sucess">
+                                <form class="form-horizontal">
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Block:</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">#</span>
+                                                <input class="form-control" type="number" value="2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Nonce:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" value="72608">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Data:</label>
+                                        <div class="col-sm-10"><textarea class="form-control" rows="8"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Prev:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" disabled=""
+                                                value="09876dshbn876w2tfvw76t">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Hash:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" disabled=""
+                                                value="09876dshbn876w2tfvw76t">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <div class="col-sm-2">
+                                            <i class="icon-spinner icon-spin icon-large"></i>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <button class="btn btn-primary ladda-button" id="block1chain1mineButton"
+                                                data-style="expand-right">
+                                                <span class="ladda-label">Mine</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-inline">
+                        <div class="col-xs-7">
+                            <div class="form form-bg-sucess">
+                                <form class="form-horizontal">
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Block:</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">#</span>
+                                                <input class="form-control" type="number" value="3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Nonce:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" value="72608">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Data:</label>
+                                        <div class="col-sm-10"><textarea class="form-control" rows="8"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Prev:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" disabled=""
+                                                value="09876dshbn876w2tfvw76t">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Hash:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" disabled=""
+                                                value="09876dshbn876w2tfvw76t">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <div class="col-sm-2">
+                                            <i class="icon-spinner icon-spin icon-large"></i>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <button class="btn btn-primary ladda-button" id="block1chain1mineButton"
+                                                data-style="expand-right">
+                                                <span class="ladda-label">Mine</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-inline">
+                        <div class="col-xs-7">
+                            <div class="form form-bg-sucess">
+                                <form class="form-horizontal">
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Block:</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">#</span>
+                                                <input class="form-control" type="number" value="4">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Nonce:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" value="72608">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Data:</label>
+                                        <div class="col-sm-10"><textarea class="form-control" rows="8"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Prev:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" disabled=""
+                                                value="09876dshbn876w2tfvw76t">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Hash:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" disabled=""
+                                                value="09876dshbn876w2tfvw76t">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <div class="col-sm-2">
+                                            <i class="icon-spinner icon-spin icon-large"></i>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <button class="btn btn-primary ladda-button" id="block1chain1mineButton"
+                                                data-style="expand-right">
+                                                <span class="ladda-label">Mine</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-inline">
+                        <div class="col-xs-7">
+                            <div class="form form-bg-sucess">
+                                <form class="form-horizontal">
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Block:</label>
+                                        <div class="col-sm-10">
+                                            <div class="input-group">
+                                                <span class="input-group-addon">#</span>
+                                                <input class="form-control" type="number" value="5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Nonce:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" value="72608">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Data:</label>
+                                        <div class="col-sm-10"><textarea class="form-control" rows="8"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Prev:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" disabled=""
+                                                value="09876dshbn876w2tfvw76t">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <label class="col-sm-2 label">Hash:</label>
+                                        <div class="col-sm-10">
+                                            <input class="form-control" type="text" disabled=""
+                                                value="09876dshbn876w2tfvw76t">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row mb-3">
+                                        <div class="col-sm-2">
+                                            <i class="icon-spinner icon-spin icon-large"></i>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <button class="btn btn-primary ladda-button" id="block1chain1mineButton"
+                                                data-style="expand-right">
+                                                <span class="ladda-label">Mine</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+
+    </section>
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <script src="./src/js/app.js"></script>
+</body>
+
+</html>
