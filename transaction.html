@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>BlockChain</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Style css -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/bootstrap.min.js">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#!">Blockchain Demo: Public / Private Keys & Signing</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto d-flex mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="./keys.html">Keys</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./signatures.html">Signatures</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#!">Transaction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blockchain_2nd.html">Blockchain</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="mt-5">
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Signatures</h4>
+                    <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                        <li class="nav-item"><a class="nav-link active" id="sign-tab" data-toggle="tab" href="#sign"
+                                role="tab" aria-controls="sign" aria-selected="true">Sign</a></li>
+                        <li class="nav-item"><a class="nav-link " id="verify-tab" data-toggle="tab" href="#verify"
+                                role="tab" aria-controls="verify" aria-selected="false">Verify</a></li>
+                    </ul>
+                </div>
+                <div class="card-body" id="card">
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane active" id="sign" role="tabpanel" aria-labelledby="sign-tab">
+                            <form class="form-horizontal">
+                                <div class="form-group mb-3">
+                                    <label class="label" for="data">Message</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">$</div>
+                                        <input class="form-control" id="sign-amount" value="20.00">
+                                        <div class="input-group-addon">From:</div>
+                                        <input class="form-control" value="0982sh86dfxgah" id="sign-from">
+                                        <div class="input-group-addon">-&gt;</div>
+                                        <input class="form-control" id="sign-to"
+                                            value="04cc955bf8e359cc7ebbb66f4c2dc616a93e8ba08e93d27996e20299ba92cba9cbd73c2ff46ed27a3727ba09486ba32b5ac35dd20c0adec020536996ca4d9f3d74">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="label">Private Key</label>
+                                    <input class="form-control" type="number">
+                                </div>
+                                <div class="form-group mb-3">
+                                    <button class="btn btn-block btn-primary" type="button">Sign</button>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="label">Message Signature</label>
+                                    <input class="form-control" id="sign-signature" disabled="">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane" id="verify" role="tabpanel" aria-labelledby="verify-tab">
+                            <form class="form-horizontal">
+                                <div class="form-group mb-3">
+                                    <label class="label" for="data">Message</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon">$</div>
+                                        <input class="form-control" id="sign-amount" value="20.00">
+                                        <div class="input-group-addon">From:</div>
+                                        <input class="form-control" value="0982sh86dfxgah" id="sign-from">
+                                        <div class="input-group-addon">-&gt;</div>
+                                        <input class="form-control" id="sign-to"
+                                            value="04cc955bf8e359cc7ebbb66f4c2dc616a93e8ba08e93d27996e20299ba92cba9cbd73c2ff46ed27a3727ba09486ba32b5ac35dd20c0adec020536996ca4d9f3d74">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="label">Message Signature</label>
+                                    <input class="form-control" id="sign-signature">
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <button class="btn btn-block btn-primary" type="button">Verify</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
